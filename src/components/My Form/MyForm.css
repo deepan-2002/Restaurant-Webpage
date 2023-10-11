@@ -1,0 +1,38 @@
+:root {
+    --bg-color: #ec530e;
+    --container-color: #fff;
+    --secondary-text: #808080;
+
+}
+
+.main {
+    background-color: var(--bg-color);
+    min-height: 90vh;
+}
+
+.main section {
+    width: fit-content;
+    background-color: var(--container-color);
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.main .section-2 {
+    width: 300px;
+}
+
+.main .description {
+    color: var(--secondary-text);
+}
+
+.btn-book {
+    color: var(--container-color);
+    background-color: var(--bg-color);
+}
+
+.btn-menu{
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    color: var(--container-color);
+}

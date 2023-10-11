@@ -1,0 +1,28 @@
+.next-page {
+    background-color: var(--bg-color);
+    min-height: 90vh;
+}
+
+.next-page .container {
+    background-color: var(--container-color);
+}
+
+.next-page p {
+    font-size: larger;
+}
+
+.next-page .col-12 {
+    padding-left: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+    .next-page p {
+        font-size: unset;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .next-page .col-12 {
+        padding: unset;
+    }
+}
