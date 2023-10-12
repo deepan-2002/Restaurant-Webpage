@@ -1,18 +1,21 @@
 :root {
-    --bg-color: #ec530e;
-    --container-color: #fff;
+    --primary-color: #e06229;
+    --primary-sub-color: #fcefe7;
+    --secondary-color: black;
+    --bg-primary: #fff;
     --secondary-text: #808080;
+    --positive-color: #4ea577;
 
 }
 
 .main {
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
     min-height: 90vh;
 }
 
 .main section {
     width: fit-content;
-    background-color: var(--container-color);
+    background-color: var(--primary-sub-color);
     padding: 40px 20px;
     border-radius: 20px;
     margin: 20px;
@@ -27,12 +30,12 @@
 }
 
 .btn-book {
-    color: var(--container-color);
-    background-color: var(--bg-color);
+    color: var(--bg-primary);
+    background-color: var(--secondary-color);
 }
 
-.btn-menu{
-    background-color: var(--bg-color);
+.btn-bookTable{
+    background-color: var(--secondary-color);
     border-radius: 20px;
-    color: var(--container-color);
+    color: var(--bg-primary);
 }

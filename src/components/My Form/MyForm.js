@@ -29,6 +29,7 @@ function MyForm() {
         }
         catch (error) {
             console.error('Error posting data:', error);
+            alert('Something went wrong, Please try again!')
         }
     };
 
@@ -51,13 +52,13 @@ function MyForm() {
                             </p>
                         </div>
 
-                        {/* Form fields */}
                         <div>
                             <label htmlFor="name" className="form-label">
                                 Name
                             </label>
                             <input
                                 type="text"
+                                placeholder='Enter Your Name'
                                 className="form-control"
                                 id="name"
                                 name="name"
@@ -72,6 +73,7 @@ function MyForm() {
                             </label>
                             <input
                                 type="email"
+                                placeholder='Enter Your Mail ID'
                                 className="form-control"
                                 id="email"
                                 name="email"
@@ -86,6 +88,7 @@ function MyForm() {
                             </label>
                             <input
                                 type="tel"
+                                placeholder='Enter Your Mobile Number'
                                 className="form-control"
                                 id="mobile"
                                 name="mobile"
@@ -100,6 +103,7 @@ function MyForm() {
                             </label>
                             <input
                                 type="number"
+                                placeholder='Enter the No Of Members'
                                 className="form-control"
                                 id="members"
                                 name="members"

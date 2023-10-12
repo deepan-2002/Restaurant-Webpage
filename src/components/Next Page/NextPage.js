@@ -33,26 +33,30 @@ function NextPage() {
         <section className='container p-5 rounded'>
           <div className='row text-center'>
             <h1>{lastItem.name}, Your Table is successfully booked !!</h1>
-            <h3>Table No: <span class="badge text-bg-danger">{lastItem.id}</span></h3>
+            <h3>Table No: <span class="badge">{lastItem.id}</span></h3>
           </div>
 
-          <div className='row p-3 align-items-center justify-content-center'>
-            <div className='col-12 col-md-6'>
-              <div>
-                <h3>Booked Person Details</h3>
-                <p>Name: <strong>{lastItem.name}</strong></p>
-                <p>Email: <strong>{lastItem.email}</strong></p>
-                <p>Mobile: <strong>{lastItem.mobile}</strong></p>
-              </div>
-            </div>
+          <div className='row details-row justify-content-center rounded'>
+            <div className='col p-2'>
+              <div className='row justify-content-center align-items-center'>
+                <div className='col-12 col-md-6 me-md-5'>
+                  <div>
+                    <h3>Booked Person Details</h3>
+                    <p>Name: <strong>{lastItem.name}</strong></p>
+                    <p>Email: <strong>{lastItem.email}</strong></p>
+                    <p>Mobile: <strong>{lastItem.mobile}</strong></p>
+                  </div>
+                </div>
 
-            <div className='col-12 col-md-6'>
-              <h3>Session Details</h3>
-              <p>No of Members: <strong>{lastItem.members}</strong></p>
-              <p>Date: <strong>{lastItem.date}</strong></p>
-              <p>Location: <strong>{lastItem.location}</strong></p>
-              <p>Session Booked: <strong>{lastItem.session}</strong></p>
-              <p>Food type: <strong>{lastItem.food}</strong></p>
+                <div className='col-12 col-md-6 ms-md-5'>
+                  <h3>Session Details</h3>
+                  <p>No of Members: <strong>{lastItem.members}</strong></p>
+                  <p>Date: <strong>{lastItem.date}</strong></p>
+                  <p>Location: <strong>{lastItem.location}</strong></p>
+                  <p>Session Booked: <strong>{lastItem.session}</strong></p>
+                  <p>Food type: <strong>{lastItem.food}</strong></p>
+                </div>
+              </div>
             </div>
           </div>
 

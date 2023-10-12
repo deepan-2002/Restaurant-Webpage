@@ -1,18 +1,29 @@
 .next-page {
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
     min-height: 90vh;
 }
 
 .next-page .container {
-    background-color: var(--container-color);
+    background-color: var(--bg-primary);
 }
 
 .next-page p {
     font-size: larger;
 }
 
+.next-page .details-row{
+    border: 1px solid var(--secondary-text);
+    background-color: var(--primary-sub-color);
+}
+
 .next-page .col-12 {
-    padding-left: 150px;
+    /* background-color: var(--secondary-text); */
+    padding: 50px;
+    width: fit-content;
+}
+
+.next-page .badge{
+    background-color: var(--positive-color);
 }
 
 @media only screen and (max-width: 600px) {
