@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './MyForm.css'
+import './BookTable.css'
 
-function MyForm() {
+function BookTable() {
     const [formData, setFormData] = useState({
         id: '',
         name: '',
@@ -123,7 +123,7 @@ function MyForm() {
 
                         <div>
                             <p>Location:</p>
-                            <select class="form-select" aria-label="Default select example" id='location' name='location' value={formData.location} onChange={handleInputChange}>
+                            <select className="form-select" aria-label="Default select example" id='location' name='location' value={formData.location} onChange={handleInputChange}>
                                 <option selected>Select Location</option>
                                 <option value="Chennai">Chennai</option>
                                 <option value="Bangalore">Bangalore</option>
@@ -140,20 +140,20 @@ function MyForm() {
 
                         <div>
                             <p>Session:</p>
-                            <input type="radio" class="btn-check" name="session" id="option1" value='Lunch' autocomplete="off" onChange={handleInputChange} />
-                            <label class="btn btn-outline-dark me-2" for="option1">Lunch</label>
+                            <input type="radio" className="btn-check" name="session" id="option1" value='Lunch' autocomplete="off" onChange={handleInputChange} />
+                            <label className="btn btn-outline-dark me-2" for="option1">Lunch</label>
 
-                            <input type="radio" class="btn-check" name="session" id="option2" value='Dinner' autocomplete="off" onChange={handleInputChange} />
-                            <label class="btn btn-outline-dark" for="option2">Dinner</label>
+                            <input type="radio" className="btn-check" name="session" id="option2" value='Dinner' autocomplete="off" onChange={handleInputChange} />
+                            <label className="btn btn-outline-dark" for="option2">Dinner</label>
                         </div>
 
                         <div>
                             <p>Veg/ Non-Veg</p>
-                            <input type="radio" class="btn-check" name="food" id="option3" value='Vegetarian' autocomplete="off" onChange={handleInputChange} />
-                            <label class="btn btn-outline-success me-2" for="option3">Veg</label>
+                            <input type="radio" className="btn-check" name="food" id="option3" value='Vegetarian' autocomplete="off" onChange={handleInputChange} />
+                            <label className="btn btn-outline-success me-2" for="option3">Veg</label>
 
-                            <input type="radio" class="btn-check" name="food" id="option4" value='Non-Vegetarian' autocomplete="off" onChange={handleInputChange} />
-                            <label class="btn btn-outline-danger" for="option4">Non-Veg</label>
+                            <input type="radio" className="btn-check" name="food" id="option4" value='Non-Vegetarian' autocomplete="off" onChange={handleInputChange} />
+                            <label className="btn btn-outline-danger" for="option4">Non-Veg</label>
                         </div>
 
                         <br />
@@ -168,4 +168,4 @@ function MyForm() {
     );
 }
 
-export default MyForm;
+export default BookTable;

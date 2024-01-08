@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import MyForm from './components/My Form/MyForm';
-import NextPage from './components/Next Page/NextPage';
 import Menu from './components/Menu';
+import './App.css'
+import BookTable from './components/BookTable/BookTable';
+import Submission from './components/Submission/Submission';
 
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
         <BrowserRouter>
         <Menu/>
             <Routes>
-                <Route path='/' element={<MyForm/>} />
-                <Route path='/response' element={<NextPage />} />
+                <Route path='/' element={<BookTable/>} />
+                <Route path='/response' element={<Submission />} />
             </Routes>
         </BrowserRouter>
     )

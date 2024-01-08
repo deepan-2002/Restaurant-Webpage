@@ -1,13 +1,3 @@
-:root {
-    --primary-color: #e06229;
-    --primary-sub-color: #fcefe7;
-    --secondary-color: black;
-    --bg-primary: #fff;
-    --secondary-text: #808080;
-    --positive-color: #4ea577;
-
-}
-
 .main {
     background-color: var(--primary-color);
     min-height: 90vh;
