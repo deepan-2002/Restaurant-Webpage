@@ -21,8 +21,6 @@ function MyForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        navigate('/response')
-
         try {
             const response = await axios.post('https://65210a08a4199548356cbe00.mockapi.io/users', formData);
             console.log('Data posted successfully:', response.data);
@@ -31,6 +29,8 @@ function MyForm() {
             console.error('Error posting data:', error);
             alert('Something went wrong, Please try again!')
         }
+
+        navigate('/response',{state:{formData}})
     };
 
     const handleInputChange = (e) => {
